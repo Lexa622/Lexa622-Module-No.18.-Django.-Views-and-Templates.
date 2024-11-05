@@ -16,15 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from task2.views import ClassTemplate, func_template
-from task4.views import platform, games, cart
+from task5.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('func/', func_template),
     # path('class/', ClassTemplate.as_view()),
-    path('platform/', platform),
-    path('games/', games),
-    path('cart/', cart),
+    # path('platform/', platform),
+    # path('games/', games),
+    # path('cart/', cart),
+    path('html_sign_up/', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django),
 ]
 # python manage.py runserver
+# python manage.py startapp task5
+# cd UrbanDjango
